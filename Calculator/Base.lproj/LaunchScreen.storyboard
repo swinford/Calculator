@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016 Zach Swinford. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cqr-XY-WEt">
+                                <rect key="frame" x="20" y="520" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lHi-1h-yhS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pocket Calculator" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-ph-S4d">
+                                <rect key="frame" x="20" y="28" width="560" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalculatorBlue" translatesAutoresizingMaskIntoConstraints="NO" id="28r-ud-sby">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="HUu-BY-g1o"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="28r-ud-sby" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3K7-nf-Qv1"/>
+                            <constraint firstItem="bKi-ph-S4d" firstAttribute="leading" secondItem="cqr-XY-WEt" secondAttribute="leading" id="3v1-Vd-YjW"/>
+                            <constraint firstItem="cqr-XY-WEt" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Cmg-x5-CqN"/>
+                            <constraint firstAttribute="bottom" secondItem="cqr-XY-WEt" secondAttribute="bottom" constant="20" symbolic="YES" id="De8-wP-Zsk"/>
+                            <constraint firstItem="28r-ud-sby" firstAttribute="centerX" secondItem="bKi-ph-S4d" secondAttribute="centerX" id="FiO-58-32p"/>
+                            <constraint firstItem="bKi-ph-S4d" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="HsI-oc-b6W"/>
+                            <constraint firstItem="cqr-XY-WEt" firstAttribute="top" secondItem="28r-ud-sby" secondAttribute="bottom" constant="95" id="Iud-hQ-0Cl"/>
+                            <constraint firstItem="bKi-ph-S4d" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="ag9-lD-5t4"/>
+                            <constraint firstItem="cqr-XY-WEt" firstAttribute="trailing" secondItem="bKi-ph-S4d" secondAttribute="trailing" id="lkP-Sj-5so"/>
+                            <constraint firstItem="28r-ud-sby" firstAttribute="top" secondItem="bKi-ph-S4d" secondAttribute="bottom" constant="47" id="rd6-QM-blI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CalculatorBlue" width="512" height="512"/>
+    </resources>
+</document>
